@@ -1,0 +1,154 @@
+<Drs_Pick_Up_Stuff>
+<!--  Index (ctrl F to search for these terms)
+	Barbed Wire
+	Blinds & Curtains
+	Block Frames
+	Burning Barrel
+	Cinder Blocks
+	Curtains
+	Driftwood
+	Ember Piles
+	Mines
+	Paintings
+	Plants
+	Scrap Iron Frames
+	Scrap Metal Pile
+	Spike Traps
+	Tires
+	Wood Frames
+-->
+<!-- BARBED WIRE -->
+	<append xpath="/blocks/block[@name='barbedWireSheet']">
+		<property name="CanPickup" value="true"/>
+	</append>				
+<!--  BLINDS & CURTAINS -->
+	<append xpath="/blocks/block[@name='commercialBlindsTop']" >
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="2"/>
+		<property name="Material" value="MresourceScrapPolymers"/>
+	</append> 
+	<append xpath="/blocks/block[@name='curtain_top1Sheet3']" >
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="10"/>
+	</append> 
+	<append xpath="/blocks/block[@name='miniblindTopSheet']" >
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="2"/>
+		<property name="Material" value="MresourceScrapPolymers"/>
+	</append>
+<!-- BLOCK FRAMES -->
+	<!-- WOOD FRAMES -->
+	<set xpath="/blocks/block[contains(@name, 'solidWoodFrame')]/property[@name='CreativeMode']/@value">Player</set>
+	<set xpath="/blocks/block[contains(@name, 'solidWoodFrame')]/property[@name='CanPickup']/@value">true</set>
+	<append xpath="/blocks/block[contains(@name, 'solidWoodFrame')]">
+		<property name="Weight" value="10"/>
+	</append>
+	<!-- SCRAP IRON FRAMES -->
+	<set xpath="/blocks/block[contains(@name, 'solidScrapIronFrame')]/property[@name='CreativeMode']/@value">Player</set>
+	<set xpath="/blocks/block[contains(@name, 'solidScrapIronFrame')]/property[@name='CanPickup']/@value">true</set>
+	<append xpath="/blocks/block[contains(@name, 'solidScrapIronFrame')]">
+		<property name="Weight" value="15"/>
+	</append>
+<!-- BURNING BARREL -->
+	<set xpath="/blocks/block[@name='burningBarrel']">
+		<property name="Extends" value="burningBarrelPlayer"/>
+	</set>
+	<!-- /property[@name='Extends']/@value">burningBarrelPlayer</set> -->
+	<append xpath="/blocks/block[@name='burningBarrel']">
+		<property name="CanPickup" value="true" param1="burningBarrelPlayer"/>
+	</append>	
+<!-- CINDER BLOCKS -->
+	<append xpath="/blocks/block[@name='cinderBlocks01']">
+		<property name="Extends" value="concreteNoUpgradeMaster"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+<!-- DRIFT WOOD -->
+	<append xpath="/blocks/block[@name='driftwood']">
+		<property name="Extends" value="woodWeakNoUpgradeMaster" />
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+		<property name="FuelValue" value="750"/>
+	</append>
+<!-- EMBER PILES -->
+	<append xpath="/blocks/block[@name='emberPileDeco1']">
+		<property name="Extends" value="woodWeakNoUpgradeMaster" />
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+		<property name="FuelValue" value="500"/>
+	</append>	
+	<append xpath="/blocks/block[@name='emberPileDeco3']">
+		<property name="Extends" value="woodWeakNoUpgradeMaster" />
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+		<property name="FuelValue" value="750"/>
+	</append>
+<!-- MINES -->
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='CanPickup']/@value">true</set> 
+<!-- PAINTINGS -->
+	<append xpath="/blocks/block[contains(@name, 'painting')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="10"/>
+	</append>
+<!-- PLANTS IN THE WILD -->
+	<append xpath="/blocks/block[contains(@name,'3Harvest') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+<!-- PLANTS BY PLAYERS -->
+	<append xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']">
+		<property name="Extends" value="plantedAloe3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']">
+		<property name="Extends" value="plantedBlueberry3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']">
+		<property name="Extends" value="plantedChrysanthemum3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']">
+		<property name="Extends" value="plantedCoffee3Harvest" param1="Class"/>
+	</append>	
+	<append xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']">
+		<property name="Extends" value="plantedCorn3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']">
+		<property name="Extends" value="plantedCotton3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']">
+		<property name="Extends" value="plantedGoldenrod3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']">
+		<property name="Extends" value="plantedGraceCorn3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedHop3HarvestPlayer']">
+		<property name="Extends" value="plantedHop3Harvest" param1="Class"/>
+	</append>	
+	<append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']">
+		<property name="Extends" value="plantedMushroom3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']">
+		<property name="Extends" value="plantedPotato3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedSnowberry3HarvestPlayer']">
+		<property name="Extends" value="plantedSnowberry3Harvest" param1="Class"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
+		<property name="Extends" value="plantedYucca3Harvest" param1="Class"/>
+	</append>
+<!-- SCRAP METAL PILE -->	
+	<append xpath="/blocks/block[@name='scrapMetalPile']">
+		<property name="Extends" value="scrapIronNoUpgradeMaster" />
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+<!-- SPIKE TRAPS -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+		<property name="CanPickup" value="true"/>
+	</append>	
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+		<property name="CanPickup" value="true"/>
+	</append>
+<!--  TIRES -->
+	<append xpath='/blocks/block[@name="tire"]' >
+		<property name="CanPickup" value="true"/>
+	</append>
+</Drs_Pick_Up_Stuff>

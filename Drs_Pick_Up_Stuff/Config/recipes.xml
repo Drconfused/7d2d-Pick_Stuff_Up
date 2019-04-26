@@ -1,0 +1,42 @@
+<Drs_Pick_Up_Stuff>
+
+<!-- PICKUP STUFF RECIPES -->
+	<append xpath="/recipes">	
+		<recipe name="cinderBlocks01" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceRockSmall" count="8"/>
+		</recipe>
+		<recipe name="cinderBlocks02" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceRockSmall" count="10"/>
+		</recipe>
+		<recipe name="cinderBlocks03" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceRockSmall" count="12"/>
+		</recipe>
+		
+		<recipe name="scrapMetalPile" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceScrapIron" count="20"/>
+		</recipe>
+		
+		<!-- WOOD -->
+			<!-- driftwood -->
+		<recipe name="driftwood" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceWood" count="14"/>
+		</recipe>
+		<recipe name="driftwood2" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceWood" count="16"/>
+		</recipe>
+	
+			<!-- Ember piles / burnt wood -->		
+		<recipe name="emberPileDeco1" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceWood" count="4"/>
+		</recipe>
+		<recipe name="emberPileDeco2" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="emberPileDeco3" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceWood" count="8"/>
+		</recipe>
+		<recipe name="emberPileDeco4" count="1" material_based="true" tags="learnable">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>				
+	</append>
+</Drs_Pick_Up_Stuff>
