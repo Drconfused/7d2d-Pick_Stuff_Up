@@ -1,6 +1,10 @@
 
 
-
+Version 0.03
+	Added
+		Sandbags (still can't scrap them for sand like I want, but hopefully that will be remedied)
+		Signs - most of the signs should now be able to be picked up.
+		
 
 Version 0.02
 	Added
