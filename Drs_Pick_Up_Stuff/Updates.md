@@ -1,4 +1,7 @@
-
+Versions 0.04
+	Added	
+		Pallets and recipes to convert them into resources
+		Added recipe to convret sandbags into crushed sand.
 
 Version 0.03
 	Added

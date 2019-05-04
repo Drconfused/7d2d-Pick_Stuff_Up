@@ -90,6 +90,16 @@
 		<property name="CanPickup" value="true"/>
 		<property name="Weight" value="10"/>
 	</append>
+<!-- PALLETS -->
+	<append xpath="/blocks/block[contains(@name,'pallet')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="10"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name,'palletWhite')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="10"/>
+		<drop event="Harvest" name="resourceConcreteMix" count="50" tag="oreWoodHarvest"/>
+	</append>
 <!-- PLANTS IN THE WILD -->
 	<append xpath="/blocks/block[contains(@name,'3Harvest') and not(contains(@name,'Player'))]">
 		<property name="Class" value="CropsGrown"/>
@@ -180,7 +190,7 @@
 		<property name="CanPickup" value="true"/>
 	</append>
 <!--  TIRES -->
-	<append xpath='/blocks/block[@name="tire"]' >
+	<append xpath="/blocks/block[@name='tire']" >
 		<property name="CanPickup" value="true"/>
 	</append>
 </Drs_Pick_Up_Stuff>
