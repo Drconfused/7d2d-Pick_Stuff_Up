@@ -1,3 +1,55 @@
+
+Future Versions
+WANT TO add and make the block upgradeable to its regular form
+		<block name="cntCollapsedBatterybank">
+		<block name="cntCollapsedCementMixer">
+		<block name="cntCollapsedChemistryStation">
+		<block name="cntCollapsedForge">
+		<block name="cntCollapsedGeneratorbank">
+		<block name="cntCollapsedSolarbank">
+		<block name="cntCollapsedWorkbench">
+
+
+
+Version 0.07
+	Added weight to:
+		emberpiles, cinder bocks, scrap iron piles so that I can clean up some of the code and remove redundancy. 
+
+
+
+
+
+
+
+
+Version 0.06
+	Made the mod compatible with StallionsdensPallets mod. Currently changes the praticular pallet type to the base version of that type (palletwhite* = palletWhiteBagsBase, palletBrick* = palletBricksBase, etc, etc) 
+
+Version 0.05
+	Tables
+		coffeeTable
+		decoPicnicTable
+		endTable
+		rScrapIronTable
+		rustyIronTable
+		schoolDesk
+		tableDynamic
+		woodTable
+	Seating
+		barStool
+		parkbenches
+		pews
+		couchs
+	TVs
+	Wine Barrels
+	Empty shopping cart and shopping basket
+	Empty cash register
+	Exercise Equipment
+	Bird Bath
+	Empty shelf
+	Picture Frames
+	
+
 Versions 0.04
 	Added	
 		Pallets and recipes to convert them into resources
